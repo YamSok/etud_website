@@ -22,9 +22,12 @@
 	justify-content: flex-start;
 	min-width: 30%;
 	max-width: 100%;
-    padding: 50 30 
+    padding: 0em 30 
 }
 
+.column-title{
+    text-align: center;
+}
 body {
   color: #555;
   background: white;
