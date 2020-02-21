@@ -2,8 +2,8 @@
 body{
 	display:grid;
 	grid-template-areas: "header" "body" "footer";
-	grid-template-rows: 150px 1fr 50px;
 	height:100%;
+    margin: 0;
 }
 
 header{
@@ -28,6 +28,7 @@ footer{
 #banniere{
 	display:grid;
 	grid-template-rows:120px 30px;
+    text-align: left;
 }
 
 .linkURL{
