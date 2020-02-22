@@ -1,10 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 * {
   box-sizing: border-box;
   font-weight: normal;
         
 }
-
+.front {
+    /*background-image: url(https://images.pexels.com/photos/38136/pexels-photo-38136.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb);*/
+    background-color: red;
+  /*background-blend-mode: screen;*/
+}
 .container{
 	display:flex;
 	flex-wrap: wrap;
@@ -41,7 +45,7 @@ body {
   color: #555;
   background: white;
   text-align: center;
-  font-family: "Roboto Mono";
+  font-family: "Roboto";
 }
 
 h1 {
@@ -89,10 +93,13 @@ transition-timing-function: cubic-bezier(0.175, 0.885);
 
 .flip {
   position: relative;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   display: inline-block;
   margin-right: 2px;
   margin-bottom: 1em;
   width: 400px;
+      border-radius: 10px;
+
 }
 .flip > .front,
 .flip > .back {
@@ -113,7 +120,9 @@ transition-timing-function: cubic-bezier(0.175, 0.885);
   color: #999;
 }
 
+
 .text-shadow {
+    font-weight: medium;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
 }
 
