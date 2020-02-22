@@ -15,6 +15,7 @@
 	justify-content: space-evenly;
 	min-width: 30%;
 	max-width: 100%;
+    padding: 0 10em
 }
 
 .faw {
@@ -37,7 +38,7 @@
     width: 400px;
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: bold
 
 }
@@ -52,13 +53,20 @@ h1 {
   font-size: 2.2em;
 }
 
+/*
 .flip {
-  position: relative;
+    border: 30px;
+    border-image: url(https://images.pexels.com/photos/1762973/pexels-photo-1762973.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260) 30 ;
 }
+*/
+
+
+
+
 .flip > .front,
 .flip > .back {
   display: block;
-transition-timing-function: cubic-bezier(0.175, 0.885);
+  transition-timing-function: cubic-bezier(0.175, 0.885);
   transition-duration: 0.2s;
   transition-property: transform, opacity;
 }
@@ -74,7 +82,13 @@ transition-timing-function: cubic-bezier(0.175, 0.885);
   height: 100%;
   transform: rotateY(-180deg);
 }
-.flip:hover > .front {
+
+.flip:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px -4px rgba(0,0,0,0.20);
+  
+}
+/*.flip:hover > .front {
   transform: rotateY(180deg);
 }
 .flip:hover > .back {
@@ -90,25 +104,30 @@ transition-timing-function: cubic-bezier(0.175, 0.885);
 .flip.flip-vertical:hover > .back {
   transform: rotateX(0deg);
 }
-
+*/
 .flip {
-  position: relative;
-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  display: inline-block;
-  margin-right: 2px;
-  margin-bottom: 1em;
-  width: 400px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+      0 6px 6px rgba(0, 0, 0, 0.23);
+      display: inline-block;
+      margin-right: 2px;
+      margin-bottom: 1em;
+      width: 400px;
       border-radius: 10px;
+      transition-timing-function: cubic-bezier(0.175, 0.885);
+      transition-duration: 0.2s;
+      transition-property: transform, opacity;
+   
+
 
 }
 .flip > .front,
 .flip > .back {
   display: block;
   color: white;
-  width: inherit;
   background-size: cover !important;
   background-position: center !important;
-  height: 220px;
+  height: 210px;
   padding: 1em 2em;
   background: #313131;
   border-radius: 10px;
@@ -118,12 +137,15 @@ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   font-size: 0.9125rem;
   line-height: 160%;
   color: #999;
+    
 }
 
 
 .text-shadow {
     font-weight: medium;
-  text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);
+      text-shadow: 0 13.36px 8.896px black;
+
+  /*text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04), 3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04), 0.125rem 0.125rem rgba(0, 0, 0, 0.04), 6px 6px rgba(0, 0, 0, 0.04), 7px 7px rgba(0, 0, 0, 0.04), 8px 8px rgba(0, 0, 0, 0.04), 9px 9px rgba(0, 0, 0, 0.04), 0.3125rem 0.3125rem rgba(0, 0, 0, 0.04), 11px 11px rgba(0, 0, 0, 0.04), 12px 12px rgba(0, 0, 0, 0.04), 13px 13px rgba(0, 0, 0, 0.04), 14px 14px rgba(0, 0, 0, 0.04), 0.625rem 0.625rem rgba(0, 0, 0, 0.04), 16px 16px rgba(0, 0, 0, 0.04), 17px 17px rgba(0, 0, 0, 0.04), 18px 18px rgba(0, 0, 0, 0.04), 19px 19px rgba(0, 0, 0, 0.04), 1.25rem 1.25rem rgba(0, 0, 0, 0.04);*/
 }
 
 
