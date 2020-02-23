@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="style2.css"/>
     <link rel="stylesheet" href="button.css"/>
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="script.js"></script> 
 	</head>
 <body>
 	<header>	
@@ -29,20 +30,23 @@
            <div class="column-title">
                Les essentiels
            </div>
-            <div onclick="location.href='https://etud-mel.insa-toulouse.fr/';" style="cursor: pointer;" class="flip flip-vertical">
-                <div class="front" style="background-image: url(https://images.pexels.com/photos/1762973/pexels-photo-1762973.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)">
+            <div onclick="location.href='#';" style="cursor: pointer;" id="mail" class="flip flip-vertical">
+                <div id="mailFront" class="front" style="background-image: url(https://images.pexels.com/photos/1762973/pexels-photo-1762973.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)">
+                <span id="btn"><i class="fa fa-info-circle"></i></span>
                    <h1 class="text-shadow">Mail</h1>
                        <span class="faw">
                           <i class="fa fa-paper-plane"></i>
                         </span>
                         
                 </div>
-                <div class="back">
+                <div id="mailBack" class="back">
                    <h2>Mail</h2>
                    <p>Consulte tes mails facilement</p>
                 </div>
             </div>
-            <div onclick="location.href='http://planex.insa-toulouse.fr/'" style="cursor: pointer;" class="flip flip-vertical">
+<!--            <div onclick="location.href='http://planex.insa-toulouse.fr/'" style="cursor: pointer;" class="flip flip-vertical">-->
+            <div onclick="location.href='#'" style="cursor: pointer;" class="flip flip-vertical">
+
                 <div class="front" style="background-image: url(https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)">
                    <h1 class="text-shadow">Planning  </h1>
                     <span class="faw">
