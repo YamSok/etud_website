@@ -1,5 +1,8 @@
 window.onload = function() {
     document.getElementById("btn").onclick = function fun() {
-        document.querySelector('.front').classList.toggle('animback')
+        p = document.querySelectorAll('.back');
+       for (i=0; i<3; i++) {
+           p[i].classList.toggle('animback');
+                           }
     }
 }
