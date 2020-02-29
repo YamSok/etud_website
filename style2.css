@@ -163,10 +163,12 @@ text-shadow :hover > .back {
     margin-left: 1em;
     font-size: 1.2em;
     border-radius: 1.2em;
+    color : darkgray
 }
 
 #btn:hover{
-    color : pink;
+    color : black;
+    cursor:pointer ;
 }
 .text-shadow {
     font-weight: medium;

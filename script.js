@@ -16,7 +16,7 @@ window.onload = function() {
     }
             btn[2].onclick = function fun() { 
         p = document.querySelectorAll('.back');
-       for (i=6; i<9; i++) {
+       for (i=6; i<8; i++) {
            p[i].classList.toggle('animback');
                            }
     }
