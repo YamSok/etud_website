@@ -115,7 +115,6 @@ text-shadow :hover > .back {
 }
 .animfront{
     opacity: 0;
-    background-color: pink;
 }
 .animflipfront {
   transform: rotateX(180deg);
@@ -161,14 +160,13 @@ text-shadow :hover > .back {
 
 #btn {
     position : absolute;
-    margin-left: 2em;
-    font-size: 1em;
-    padding: 5 5 ;
-    border-radius: 10px;
+    margin-left: 1em;
+    font-size: 1.2em;
+    border-radius: 1.2em;
 }
 
 #btn:hover{
-    background-color: red;
+    color : pink;
 }
 .text-shadow {
     font-weight: medium;
